@@ -3882,7 +3882,7 @@ body.is-touch #banner {
 				width: 100%;
 				z-index: 10001;
 				/*background: #272833;*/
-				background: transparent !important;
+				background: #272833 !important;
 				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
 			}
 
@@ -4105,6 +4105,8 @@ body.is-touch #banner {
 
 	}
 
+
+
 /* Colore nero per le voci del menu nella homepage */
 .homepage #nav ul li a {
     color: black !important;
@@ -4147,9 +4149,25 @@ img {
     border-radius: 3px; /* Arrotonda leggermente gli angoli */
 }
 
+/* General styling for sponsor images */
+.sponsorimg {
+    /*margin: 0 10px; /* Horizontal space between images */
+    display: flex;
+    justify-content: center;
+}
 
+/* Media query for mobile screens (max width 768px) */
+@media (max-width: 768px) {
+    .sponsorimg {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Add space below the images */
+        display: flex;
+        justify-content: center; /* Center the images on mobile */
+    }
 
-
-
-
-
+    .row {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center the stacked images */
+        justify-content: center;
+    }
+}
